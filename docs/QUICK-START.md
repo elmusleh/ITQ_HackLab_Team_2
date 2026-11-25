@@ -14,9 +14,9 @@
 - [ ] Motors working
 
 ### Software
-- [ ] Connected to WiFi: `TP-LINK_744C` (password: `15253354`)
+- [ ] Connected to WiFi: `<robot WiFi SSID>` (password: `<WiFi password>`)
 - [ ] Jupyter Lab open: `http://192.168.0.100:8888/lab`
-- [ ] Password entered: `CIC@Tics1XAI`
+- [ ] Password entered: `<Jupyter password>`
 
 ---
 

@@ -1,9 +1,13 @@
 # 🤖 ITQ — Autonomous Bottle Cap Collector
 
 [![Hackathon](https://img.shields.io/badge/Event-AI%20%26%20Robotics%20Hackathon%20Berlin-blue)](https://hacklabs.beehiiv.com/)
-[![Status](https://img.shields.io/badge/Status-In%20Progress-yellow)](.)
+[![Status](https://img.shields.io/badge/Status-Completed%20%C2%B7%20Archived-lightgrey)](.)
+[![Result](https://img.shields.io/badge/Result-1st%20Place-gold)](.)
 [![Team](https://img.shields.io/badge/Team-Team%202-green)](.)
 [![Robot](https://img.shields.io/badge/Robot-Waveshare%20JETANK-orange)](https://github.com/waveshare/JETANK)
+
+> [!NOTE]
+> **Project status: completed hackathon project (AI & Robotics Hackathon Berlin, Jun 2026). 🏆 Team 2 won 1st place.** The repository is archived and no longer maintained. Robot network credentials from the event have been replaced with placeholders.
 
 > **Mission:** Build an autonomous robot that navigates a parkour course, avoids obstacles, and collects as many bottle caps as possible — all within 5 minutes.
 >
@@ -32,9 +36,9 @@ All code runs on the **NVIDIA Jetson Nano** via **WiFi + Jupyter Notebook**.
 ### 1. Connect to the Jetson
 ```
 # No SSH needed — Jupyter is already running on the robot
-# 1. Connect laptop to WiFi: TP-LINK_744C (password: 15253354)
+# 1. Connect laptop to WiFi: <robot WiFi SSID> (password: <WiFi password>)
 # 2. Open browser: http://192.168.0.100:8888/lab
-# 3. Enter password: CIC@Tics1XAI
+# 3. Enter password: <Jupyter password>
 ```
 
 ### 2. Open Jupyter Lab in Browser
@@ -43,7 +47,7 @@ All code runs on the **NVIDIA Jetson Nano** via **WiFi + Jupyter Notebook**.
 # Open on your laptop browser:
 http://192.168.0.100:8888/lab
 
-# Password: CIC@Tics1XAI
+# Password: <Jupyter password>
 ```
 
 ### 3. Clone the Project (First Time Only)
@@ -72,14 +76,14 @@ This is how the team works during the hackathon:
 ```
 # 1. Turn on JETANK (battery switch)
 # 2. Wait 60 seconds for Jetson to boot
-# 3. Connect laptop to WiFi: TP-LINK_744C
+# 3. Connect laptop to WiFi: <robot WiFi SSID>
 # 4. Open Jupyter: http://192.168.0.100:8888/lab
-# 5. Password: CIC@Tics1XAI
+# 5. Password: <Jupyter password>
 ```
 
 ### Step 2: Open Browser & Navigate
 - Open `http://192.168.0.100:8888/lab` on laptop
-- Enter password: `CIC@Tics1XAI`
+- Enter password: `<Jupyter password>`
 - Navigate to the project folder
 
 ### Step 3: Work in Notebooks
@@ -427,44 +431,15 @@ For interactive development and calibration on the Jetson, see the [Quick Start]
 
 ## 👥 Team & Responsibilities
 
-| Name | Role | Module | Status |
-|------|------|--------|--------|
-| **Yashveer Sookun** | Vision Lead | `src/perception/` | 🔴 Not started |
-| **Salawu Wareeth** | Pipeline / Logging | `src/utils/telemetry.py` | 🔴 Not started |
-| **Mohammed Abubakr Khan** | Integration / QA | `tests/` | 🔴 Not started |
-| **Joaquín Morillo Soto** | Hardware / Mechanics | `src/hardware/` | 🔴 Not started |
-| **Mohammad El Musleh** | Control Lead | `src/control/` + Jetson setup | 🔴 Not started |
-| **Myron Sydorov** | Navigation / Recovery | `src/control/recovery.py` | 🔴 Not started |
+| Name | Role | Module |
+|------|------|--------|
+| **Yashveer Sookun** | Vision Lead | `src/perception/` |
+| **Salawu Wareeth** | Pipeline / Logging | `src/utils/telemetry.py` |
+| **Mohammed Abubakr Khan** | Integration / QA | `tests/` |
+| **Joaquín Morillo Soto** | Hardware / Mechanics | `src/hardware/` |
+| **Mohammad El Musleh** | Control Lead | `src/control/` + Jetson setup |
+| **Myron Sydorov** | Navigation / Recovery | `src/control/recovery.py` |
 
-**Workflow:** Each person owns their module. Open a PR when ready. Pair-review before merging.
-
----
-
-## ✅ TODO / Progress
-
-### Phase 1: Perception (Hour 0–2)
-- [ ] Camera calibration script (`src/perception/calibrate.py`)
-- [ ] HSV-based bottle cap detector
-- [ ] Multi-frame validation filter
-- [ ] Obstacle detection (reuse cap pipeline or dedicated sensor)
-
-### Phase 2: Control (Hour 2–4)
-- [ ] State machine implementation (`src/control/state_machine.py`)
-- [ ] PID controller for line following (`src/control/pid.py`)
-- [ ] Recovery behavior (stuck detection + escape)
-- [ ] Integrate perception → control bridge
-
-### Phase 3: Integration (Hour 4–6)
-- [ ] End-to-end test on practice course
-- [ ] Telemetry logging (caps, time, collisions)
-- [ ] Tune detection thresholds on real lighting
-- [ ] Tune PID gains for smooth movement
-
-### Phase 4: Polish (Hour 6–8)
-- [ ] Manual override / joystick fallback
-- [ ] Backup demo video recorded
-- [ ] Final stress test (battery, lighting, WiFi)
-- [ ] **Submit**
 
 ---
 
@@ -504,22 +479,4 @@ Before building anything fancy, the robot must:
 
 ---
 
-## 📝 Git Workflow
-
-```bash
-# Start your module
-git checkout -b feature/perception-detector
-
-# Commit often
-git add perception/detector.py
-git commit -m "feat: add HSV bottle cap detector"
-
-# Push and open PR
-git push origin feature/perception-detector
-# Tag Mohammad or Myron for review
-```
-
----
-
-*Event:* AI & Robotics Hackathon Berlin — Team 2 — ITQ Track  
-*Last updated:* June 21, 2026 (Hackathon Day — Active Development)
+*Event:* AI & Robotics Hackathon Berlin — Team 2 — ITQ Track — 🏆 1st place (June 2026)

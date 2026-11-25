@@ -370,7 +370,5 @@ cat docs/state-machine-coverage.md
 ---
 
 **Quick Links**:
-- Full Plan: `/home/steve/.windsurf/plans/state-machine-full-coverage-54037a.md`
 - Complete Docs: `docs/state-machine-complete.md`
 - Coverage Tracking: `docs/state-machine-coverage.md`
-- Summary: `STATE-MACHINE-COVERAGE-SUMMARY.md`

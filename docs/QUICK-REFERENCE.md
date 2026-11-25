@@ -120,7 +120,6 @@ cv2.imshow('View', frame)
 
 - Full guide: `HARDWARE-API-COMPATIBILITY.md`
 - Example: `example_hardware_switch.py`
-- Implementation: `IMPLEMENTATION-COMPLETE.md`
 
 ---
 

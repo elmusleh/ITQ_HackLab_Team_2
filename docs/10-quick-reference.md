@@ -4,11 +4,11 @@
 
 | | |
 |---|---|
-| WiFi SSID | `TP-LINK_744C` |
-| WiFi Password | `15253354` |
+| WiFi SSID | `<robot WiFi SSID>` |
+| WiFi Password | `<WiFi password>` |
 | Jetson IP | `192.168.0.100` |
 | Jupyter URL | `http://192.168.0.100:8888/lab` |
-| Jupyter Password | `CIC@Tics1XAI` |
+| Jupyter Password | `<Jupyter password>` |
 
 ## Commands
 

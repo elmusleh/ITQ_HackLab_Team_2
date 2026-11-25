@@ -4,13 +4,13 @@
 
 | | |
 |---|---|
-| **SSID** | `TP-LINK_744C` |
-| **Password** | `15253354` |
+| **SSID** | `<robot WiFi SSID>` |
+| **Password** | `<WiFi password>` |
 | **Jetson IP** | `192.168.0.100` |
 | **Jupyter Port** | `8888` |
-| **Jupyter Password** | `CIC@Tics1XAI` |
+| **Jupyter Password** | `<Jupyter password>` |
 
-> Your laptop must connect to `TP-LINK_744C` to reach the robot.
+> Your laptop must connect to `<robot WiFi SSID>` to reach the robot.
 
 ## How to Connect (No SSH Needed)
 
@@ -21,9 +21,9 @@ The Jetson runs inside a **Docker container** on the Jetson Nano host. SSH does 
 
 **The correct workflow is Jupyter Lab:**
 
-1. Connect laptop to WiFi `TP-LINK_744C`
+1. Connect laptop to WiFi `<robot WiFi SSID>`
 2. Open browser: `http://192.168.0.100:8888/lab`
-3. Enter password: `CIC@Tics1XAI`
+3. Enter password: `<Jupyter password>`
 4. Open a Terminal inside Jupyter: `File` → `New` → `Terminal`
 
 ## Jupyter Terminal IS the Jetson Shell

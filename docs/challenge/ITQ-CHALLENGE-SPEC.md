@@ -194,9 +194,9 @@ config.yaml                   ✓ Updated with all parameters
 
 ```bash
 # Connect to robot
-# WiFi: TP-LINK_744C (password: 15253354)
+# WiFi: <robot WiFi SSID> (password: <WiFi password>)
 # Jupyter: http://192.168.0.100:8888/lab
-# Password: CIC@Tics1XAI
+# Password: <Jupyter password>
 ```
 
 ### 2. Calibration Sequence
